@@ -89,7 +89,7 @@ export const useUnstakeProofAddresses = (
     }
     ;(async function () {
       const { PROGRAM_NFT_STAKING } = getClusterConstants("PROGRAM_NFT_STAKING")
-      const unstakeProofAddressResults: [string, PublicKey][] =
+      const unstakeProofAddressResults: any =
         await Promise.all(
           _.map(mintPublicKeys, async (mintPublicKey) => {
             const [address] = await getUnstakeProofAddress(

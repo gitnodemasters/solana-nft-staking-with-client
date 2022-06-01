@@ -6,6 +6,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "export": "npm run build && next export -o _static",
     "init-pool": "ts-node --project ./scripts/tsconfig.json ./scripts/initializePool.ts",
     "add-mint-addresses": "ts-node --project ./scripts/tsconfig.json ./scripts/addMintAddresses.ts"
   },

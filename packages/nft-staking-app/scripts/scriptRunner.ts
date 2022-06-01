@@ -67,7 +67,7 @@ const loadKeypair = (keypairPath: string) => {
 const parseArgs = (args: string[]) => {
   return _.reduce(
     args,
-    (accum, value) => {
+    (accum: any, value) => {
       if (_.startsWith(value, "--")) {
         let [argKey, argValue] = _.split(value, "=")
         argKey = argKey.slice(2)
