@@ -35,6 +35,7 @@ export const renderObj = (obj: any, prefix?: string): JSX.Element[] => {
   return _.map(renderObjData(obj), ([key, value]) => {
     return (
       <Code
+        color="white"
         w="full"
         textAlign="left"
         mb="2"
@@ -69,6 +70,7 @@ export const AccountViewer = ({
   return (
     <VStack w="96" spacing="8">
       <Select
+        color="grey"
         value={selectedAccount}
         onChange={handleSelectionChange}
         cursor="pointer"
@@ -94,9 +96,10 @@ export const AccountViewer = ({
           Close Account
         </Button>
       )}
-      <Box h="96" overflow="auto" w="530px">
+      <Box h="96" overflow="auto" w="530px" color="white">
         {account && (
           <Code
+            color="white"
             w="full"
             textAlign="left"
             mb="2"

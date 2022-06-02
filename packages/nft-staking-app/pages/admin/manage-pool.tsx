@@ -192,7 +192,7 @@ const ManagePoolPage = () => {
       textAlign="center"
     >
       <VStack w="96">
-        <Heading w="full" mb="8">
+        <Heading color="white" w="full" mb="8">
           Fund Pool
         </Heading>
         {rewardMintInfo && (
@@ -204,15 +204,17 @@ const ManagePoolPage = () => {
               borderRadius="20"
               src={tokenRegistry[rewardMint].logoURI}
             />
-            <Text fontSize="16">{tokenRegistry[rewardMint].name}</Text>
+            <Text color="white" fontSize="16">{tokenRegistry[rewardMint].name}</Text>
           </HStack>
         )}
         <Text
+          color="white"
           w="full"
           fontSize="16"
           textAlign={"left"}
         >{`Number of tokens rewarded per NFT per week`}</Text>
         <NumberInput
+          color="white"
           w="full"
           value={amountPerWeek}
           defaultValue={0}
@@ -226,8 +228,8 @@ const ManagePoolPage = () => {
           </NumberInputStepper>
         </NumberInput>
         <Box w="full" textAlign={"left"}>
-          <Text>{`Approximate fund amount: ${approxFundAmount}`}</Text>
-          <Text>{`Funds refresh date: ${
+          <Text color="white">{`Approximate fund amount: ${approxFundAmount}`}</Text>
+          <Text color="white">{`Funds refresh date: ${
             pool?.rewardEndDisplay || "NOW"
           }`}</Text>
         </Box>
@@ -243,10 +245,11 @@ const ManagePoolPage = () => {
         </Button>
       </VStack>
       <Center flexDirection="column" w="96">
-        <Heading w="full" mb="8">
+        <Heading color="white" w="full" mb="8">
           Authorize Funder
         </Heading>
         <Input
+          color="white"
           placeholder="Address"
           w="full"
           value={newFunderAddress}
@@ -264,10 +267,11 @@ const ManagePoolPage = () => {
         </Button>
       </Center>
       <Center flexDirection="column" w="96">
-        <Heading w="full" mb="8">
+        <Heading color="white" w="full" mb="8">
           De-Authorize Funder
         </Heading>
         <Input
+          color="white"
           placeholder="Address"
           w="full"
           value={oldFunderAddress}
@@ -285,7 +289,7 @@ const ManagePoolPage = () => {
         </Button>
       </Center>
       <VStack w="full">
-        <Heading w="full" mb="8">
+        <Heading color="white" w="full" mb="8">
           View Pool
         </Heading>
         <AccountViewer

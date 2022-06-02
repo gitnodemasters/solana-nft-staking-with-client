@@ -1,9 +1,9 @@
 import { PublicKey } from "@solana/web3.js"
 
 export const ADDRESS_STAKING_POOL = new PublicKey(
-  "7kFLKBKotaYBjubWYQFKshJGwV8bcPmPFpWqXEZmQScL"
+  "FymmErJcC6josr7WRbJuQdxyBBkV9nj4WXnin2pYS1eC"
 )
 
 export const PROGRAM_NFT_STAKING = new PublicKey(
-  "BHvGoqbTvVVBUdDY42Et73FckAhBXj9QKFqKmf68PZ9S"
+  "C739MJdnbYBJ7TkJpVe75Y3ddhV3Ya9R5V1o6KzVqtzB"
 )
