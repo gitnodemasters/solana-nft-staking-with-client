@@ -1,15 +1,12 @@
 {
-  "cluster": "devnet",
+  "cluster": "mainnet-beta",
   "keypair": "/home/top/.config/solana/id.json",
-  "stakingProgramId": "AHQKy3Uue2Y8RhNdCvZ3qWf7x6aFwDuWszkMZwqGJ1FA",
-  "maxNumNftMints": 10,
-  "rewardDuration": 300,
+  "stakingProgramId": "C739MJdnbYBJ7TkJpVe75Y3ddhV3Ya9R5V1o6KzVqtzB",
+  "maxNumNftMints": 8888,
+  "rewardDuration": 31536000,
   "unstakeDuration": 300,
-  "rewardMint": "6RnZ7wAEGyaN64EhhtYZGeV8E4eGLLztZAzxdjeuAZWU",
+  "rewardMint": "3ADszhGBuRvTcX7QJZvEGKDeCzxbF1EiqVecGYtsaAYy",
   "validNftMints": [
-    "3yhe9ctad2gKtKR3KPeNCRTkdt3cAw7zFkx2KaEMmsXJ",
-    "G9stsZsqfJJ7R2aZVBd1jN5FCEdotiRm5mt7iHdG7fiy",
-    "HGQhXH9zeEbKSdSZqugAw4AvdYSeVaBEGGgRqY7uGW2h",
-    "GvF9dMettXEDp66qa2RnRcyh1Lft3jSf4EogAmaZxGQp"
+    "Fh6Vvw44wb6n5honzAfvrae6iq7FSRiKzMB6runL8csb"
   ]
 }

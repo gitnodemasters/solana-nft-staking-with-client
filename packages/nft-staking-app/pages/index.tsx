@@ -273,7 +273,7 @@ const ManagePoolPage = () => {
         {selectedTab === PAGE_TABS.STAKE &&
           (walletPublicKey && pool && monketteAccounts ? (
             <VStack>
-              <Text>(Click to stake)</Text>
+              <Text color="white">(Click to stake)</Text>
               <Center w="120" flexWrap={"wrap"}>
                 {_.map(monketteAccounts, (monketteAccount, key) => {
                   return (
@@ -291,14 +291,14 @@ const ManagePoolPage = () => {
             </VStack>
           ) : (
             <VStack>
-              <Text fontFamily="T1">No NFTs found</Text>
+              <Text fontFamily="T1" color="white">No NFTs found</Text>
             </VStack>
           ))}
 
         {selectedTab === PAGE_TABS.UNSTAKE &&
           (walletPublicKey && pool && userAccount && stakedMonketteAccounts ? (
             <VStack>
-              <Text>(Click to unstake)</Text>
+              <Text color="white">(Click to unstake)</Text>
               <Center w="120" flexWrap={"wrap"}>
                 {_.map(stakedMonketteAccounts, (monketteAccount, key) => {
                   let unstakeProof: UnstakeProof | undefined
@@ -325,7 +325,7 @@ const ManagePoolPage = () => {
             </VStack>
           ) : (
             <VStack>
-              <Text fontFamily="T1">No staked NFTs found</Text>
+              <Text fontFamily="T1" color="white">No staked NFTs found</Text>
             </VStack>
           ))}
 
@@ -336,10 +336,10 @@ const ManagePoolPage = () => {
               justifyContent="space-between"
               borderBottom={"2px solid grey"}
             >
-              <Text textAlign={"left"} fontSize="18" fontWeight={600}>
+              <Text color="white" textAlign={"left"} fontSize="18" fontWeight={600}>
                 NFTs Staked
               </Text>
-              <Text textAlign={"right"} fontSize="18" fontWeight={600}>
+              <Text color="white" textAlign={"right"} fontSize="18" fontWeight={600}>
                 {`${userAccount?.data.mintStakedCount.toString()}`}
               </Text>
             </Flex>
@@ -356,11 +356,11 @@ const ManagePoolPage = () => {
                   borderRadius="20"
                   src={rewardToken.logoURI}
                 />
-                <Text textAlign={"left"} fontSize="18" fontWeight={600}>
+                <Text color="white" textAlign={"left"} fontSize="18" fontWeight={600}>
                   {`${rewardToken.name} claimed`}
                 </Text>
               </HStack>
-              <Text textAlign={"right"} fontSize="18" fontWeight={600}>
+              <Text color="white" textAlign={"right"} fontSize="18" fontWeight={600}>
                 {`${fromRawAmount(
                   rewardToken.decimals,
                   userAccount.data.rewardEarnedClaimed.toNumber()
@@ -380,11 +380,11 @@ const ManagePoolPage = () => {
                   borderRadius="20"
                   src={rewardToken.logoURI}
                 />
-                <Text textAlign={"left"} fontSize="18" fontWeight={600}>
+                <Text color="white" textAlign={"left"} fontSize="18" fontWeight={600}>
                   {`${rewardToken.name} available`}
                 </Text>
               </HStack>
-              <Text textAlign={"right"} fontSize="18" fontWeight={600}>
+              <Text color="white" textAlign={"right"} fontSize="18" fontWeight={600}>
                 {`${userAccount.getRewardsToClaim(
                   pool.data.rewardRatePerToken,
                   rewardToken.decimals
