@@ -26,17 +26,20 @@ const AccountsCacheProvidersSetup = ({ children }: { children: ReactNode }) => {
     Program | undefined
   >()
 
-  useEffect(() => {
-    if (!connection) {
+  useEffect(() => {    
+    if (!connection || !wallet) {
       return
+    } else {
+      func();
     }
-    ;(async function () {
-      // @ts-ignore - calling provider without wallet is used to instantiate connection
-      const provider = new Provider(connection, wallet, {})
-      const nftStakingProgram = await getNftStakingProgram(provider)
-      setNftStakingProgram(nftStakingProgram)
-    })()
   }, [connection, wallet])
+
+  const func = async () => {
+    // @ts-ignore - calling provider without wallet is used to instantiate connection
+    const provider = new Provider(connection, wallet, {})
+    const nftStakingProgram = await getNftStakingProgram(provider)
+    setNftStakingProgram(nftStakingProgram)
+  }
 
   if (!nftStakingProgram) {
     return <>{children}</>

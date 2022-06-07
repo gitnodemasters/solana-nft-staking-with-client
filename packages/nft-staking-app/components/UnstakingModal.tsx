@@ -75,6 +75,7 @@ const UnstakingModal = ({
               <Text fontWeight={"bold"}>
                 {selectedMonkette.staticData.name}
               </Text>
+              <Text>{`Unstaking period: ${pool?.unstakingPeriodDisplay}`}</Text>
             </VStack>
           )}
         </ModalBody>

@@ -18,7 +18,7 @@ export const useTokenRegistry = () => {
         (accum: Record<string, TokenInfo>, tokenInfo) => {
           accum[tokenInfo.address] = { ...tokenInfo }
           if (
-            tokenInfo.address === "6RnZ7wAEGyaN64EhhtYZGeV8E4eGLLztZAzxdjeuAZWU"
+            tokenInfo.address === "3ADszhGBuRvTcX7QJZvEGKDeCzxbF1EiqVecGYtsaAYy"
           ) {
             // @ts-ignore - skip readonly declaration in this case
             accum[tokenInfo.address].decimals = 9

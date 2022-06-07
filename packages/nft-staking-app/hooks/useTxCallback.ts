@@ -23,6 +23,7 @@ const useTxCallback = (
         isClosable: true,
         description: statusTexts.success,
       })
+      // window.location.reload();
     } catch (err) {
       console.log(err)
       toast({

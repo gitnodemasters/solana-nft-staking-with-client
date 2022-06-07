@@ -200,9 +200,10 @@ const ManagePoolPage = () => {
     if (!unstakeProofAddresses || !unstakeProofs || !selectedMonkette) {
       return
     }
-    const unstakeProofAddress =
-      unstakeProofAddresses[selectedMonkette.metaplexMetadata.data.mint]
-    return unstakeProofs[unstakeProofAddress.toString()]
+    if (unstakeProofAddresses[selectedMonkette.metaplexMetadata.data.mint]) {
+      const unstakeProofAddress = unstakeProofAddresses[selectedMonkette.metaplexMetadata.data.mint]
+      return unstakeProofs[unstakeProofAddress.toString()]        
+    }    
   }, [_.size(unstakeProofAddresses), _.size(unstakeProofs), selectedMonkette])
 
   return (
