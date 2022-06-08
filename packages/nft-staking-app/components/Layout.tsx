@@ -212,13 +212,13 @@ const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
       // justifyContent={{ base: "space-between", md: "flex-end" }}
       {...rest}
     >
-      <IconButton
+      {/* <IconButton
         display={{ base: "flex", md: "none" }}
         onClick={onOpen}
         variant="outline"
         aria-label="open menu"
         icon={<FiMenu />}
-      />
+      /> */}
         <Link href="/" passHref>
           <Box cursor="pointer">
             <Image

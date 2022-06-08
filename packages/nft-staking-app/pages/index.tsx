@@ -227,9 +227,9 @@ const ManagePoolPage = () => {
       />
       <VStack w="full" spacing={16} textAlign="center">
         <Heading color="white" fontFamily="T1">
-          NFT Staking!
+          Pitbull Staking!
         </Heading>
-        <HStack spacing="8">
+        <HStack spacing="4" width="100%" justifyContent="center">
           <Button
             w="48"
             color="white"
@@ -267,7 +267,7 @@ const ManagePoolPage = () => {
                 : "brandPink.200"
             }
           >
-            Claim reward
+            Claim
           </Button>
         </HStack>
 
